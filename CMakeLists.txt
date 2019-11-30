@@ -1,0 +1,7 @@
+cmake_minimum_required(VERSION 3.0)	
+project(lab3)			
+set(SOURCE_EXE main.cpp)		
+set(SOURCE_LIB_FIGURE Figure.cpp)			
+add_library(Figure STATIC ${SOURCE_LIB_FIGURE})
+add_executable(main ${SOURCE_EXE})	
+target_link_libraries(main Figure)
